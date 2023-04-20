@@ -1,0 +1,94 @@
+.gpt3__possibility {
+    display: flex;
+    flex-direction: row;
+}
+.gpt3__possibility-img {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 2rem;
+}
+.gpt3__possibility-img img {
+    width: 100%;
+    height: 100%;
+}
+.gpt3__possibility-content {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.gpt3__possibility-content .req,
+.gpt3__possibility-content .req2 {
+    width: 271px;
+    height: 30px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+}
+.gpt3__possibility-content .req {
+    color: #71E5FF;
+}
+.gpt3__possibility-content h1 {
+    width: 426px;
+    height: 90px;
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 45px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+.gpt3__possibility-content .text {
+    width: 479px;
+    height: 120px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--color-text);
+}
+.gpt3__possibility-content .req2 {
+    color: var(--color-subtext);
+}
+
+
+@media screen and (max-width: 990px) {
+    .gpt3__possibility {
+        flex-direction: column;
+    }
+    .gpt3__possibility-content {
+        margin-left: 0;
+        margin-top: 5rem;
+    }
+    .gpt3__possibility-content .text {
+        width: 350px;
+        height: 75px;
+        margin-bottom: 7rem;
+    }
+    .gpt3__possibility-content h1 {
+        width: 426px;
+        font-size: 25px;
+        line-height: 38px;
+    }
+}
+
+
+@media screen and (max-width: 550px) {
+    .gpt3__possibility-content h1 {
+        width: 326px;
+        font-size: 25px;
+        line-height: 38px;
+    }
+    .gpt3__possibility-content .text {
+        width: 350px;
+        height: 75px;
+        margin-bottom: 7rem;
+    }
+
+}
